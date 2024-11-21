@@ -1,0 +1,52 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.1">
+    <display-name>User Access Management</display-name>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet Mappings -->
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.accessmanagement.servlets.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.accessmanagement.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SoftwareServlet</servlet-name>
+        <servlet-class>com.accessmanagement.servlets.SoftwareServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RequestServlet</servlet-name>
+        <servlet-class>com.accessmanagement.servlets.RequestServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ApprovalServlet</servlet-name>
+        <servlet-class>com.accessmanagement.servlets.ApprovalServlet</servlet-class>
+    </servlet>
+
+    <!-- URL Mappings -->
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUpServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SoftwareServlet</servlet-name>
+        <url-pattern>/SoftwareServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestServlet</servlet-name>
+        <url-pattern>/RequestServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ApprovalServlet</servlet-name>
+        <url-pattern>/ApprovalServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
